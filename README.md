@@ -1,6 +1,6 @@
 # none-ls-shellcheck.nvim
 
-Native shellcheck plugin for none-ls.nvim
+Shellcheck source for none-ls.nvim
 
 Since this diagnostic will be deprecated from [none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)
 (see [this issue](https://github.com/nvimtools/none-ls.nvim/issues/58)) because a LSP alternative is available ([bashls](https://github.com/bash-lsp/bash-language-server))
