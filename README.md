@@ -18,13 +18,29 @@ This should be used as a dependency of **none-ls.nvim**.
 {
   {
     "nvimtools/none-ls.nvim",
-    config = function()
-        require("null-ls").register(require("none-ls-shellcheck.diagnostics"))
-        require("null-ls").register(require("none-ls-shellcheck.code_actions"))
-    end,
     dependencies = {
         "gbprod/none-ls-shellcheck.nvim",
     },
   },
 }
 ```
+
+## Setup
+
+Follow the steps in null-ls [setup](https://github.com/nvimtools/none-ls.nvim?tab=readme-ov-file#setup) section.
+
+```lua
+local null_ls = require("null-ls")
+
+null_ls.setup({
+  sources = {
+    require("none-ls-shellcheck.diagnostics"),
+    require("none-ls-shellcheck.code_actions"),
+    ...
+  }
+})
+```
+
+## Related projects
+
+You can search for sources via the [`none-ls-sources` topic](https://github.com/topics/none-ls-sources).
